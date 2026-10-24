@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@ankhorage/hetzner",
+      "name": "@ankhorage/infra-hetzner",
       "dependencies": {
         "@ankhorage/contracts": "^19.5.0",
       },

@@ -1,4 +1,4 @@
-import { createInfraAdapter, infraAdapterDescriptor } from '@ankhorage/hetzner';
+import { createInfraAdapter, infraAdapterDescriptor } from '@ankhorage/infra-hetzner';
 
 const adapter = createInfraAdapter();
 

@@ -1,5 +1,5 @@
 {
-  "name": "@ankhorage/hetzner",
+  "name": "@ankhorage/infra-hetzner",
   "version": "0.3.0",
   "description": "Hetzner Cloud compute adapter for provider-neutral Ankhorage infrastructure.",
   "type": "module",
@@ -9,11 +9,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankhorage/hetzner.git"
+    "url": "git+https://github.com/ankhorage/infra-hetzner.git"
   },
-  "homepage": "https://github.com/ankhorage/hetzner#readme",
+  "homepage": "https://github.com/ankhorage/infra-hetzner#readme",
   "bugs": {
-    "url": "https://github.com/ankhorage/hetzner/issues"
+    "url": "https://github.com/ankhorage/infra-hetzner/issues"
   },
   "keywords": [
     "ankhorage",
