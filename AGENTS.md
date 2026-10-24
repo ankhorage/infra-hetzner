@@ -4,7 +4,7 @@
 
 ## Repository
 
-Package: `@ankhorage/hetzner`
+Package: `@ankhorage/infra-hetzner`
 
 Hetzner Cloud compute adapter for provider-neutral Ankhorage infrastructure.
 
