@@ -121,7 +121,7 @@ jobs:
             const { readFileSync } = require("node:fs");
             const error = readFileSync(process.argv[1], "utf8");
             const packageName = process.env.PACKAGE_NAME;
-            const notFoundRequest = /^npm error 404 Not Found - GET (https:\/\/registry\.npmjs\.org\/\S+) - Not found$/mu.exec(error);
+            const notFoundRequest = /^npm error 404 Not Found - GET (https:\/\/registry\.npmjs\.org\/[^\s?#]+) - Not found$/mu.exec(error);
             const requestedPackage = notFoundRequest === null ? undefined : decodeURIComponent(new URL(notFoundRequest[1]).pathname.slice(1));
             const packageNotFound =
               /^npm error code E404$/mu.test(error) &&
