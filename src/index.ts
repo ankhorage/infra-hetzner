@@ -1,8 +1,8 @@
 /** Public Hetzner Cloud compute adapter package boundary. */
-export { infraAdapterDescriptor } from './constants/infra';
-export { createFetchHetznerCloudApi } from './features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi';
-export { createNodeHetznerHostKeyProbe } from './features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe';
-export { createInfraAdapter } from './features/cloud-compute/composition/createInfraAdapter';
+export { infraAdapterDescriptor } from './constants/infra.js';
+export { createFetchHetznerCloudApi } from './features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.js';
+export { createNodeHetznerHostKeyProbe } from './features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.js';
+export { createInfraAdapter } from './features/cloud-compute/composition/createInfraAdapter.js';
 export type {
   HetznerAdapterOptions,
   HetznerCloudApi,
@@ -13,4 +13,4 @@ export type {
   HetznerProjectIdentity,
   HetznerResourceId,
   HetznerResourceObservation,
-} from './types/hetznerCompute';
+} from './types/hetznerCompute.js';

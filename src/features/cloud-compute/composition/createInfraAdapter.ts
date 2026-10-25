@@ -1,15 +1,15 @@
 import type { InfraComputeAdapter } from '@ankhorage/contracts/infra';
 
-import { infraAdapterDescriptor } from '../../../constants/infra';
-import type { HetznerAdapterOptions } from '../../../types/hetznerCompute';
-import { createFetchHetznerCloudApi } from '../adapters/outbound/createFetchHetznerCloudApi';
-import { createNodeHetznerHostKeyProbe } from '../adapters/outbound/createNodeHetznerHostKeyProbe';
-import { destroyHetznerComputeAsync } from '../application/destroyHetznerComputeAsync';
-import { ensureHetznerComputeAsync } from '../application/ensureHetznerComputeAsync';
-import { getHetznerComputeStatusAsync } from '../application/getHetznerComputeStatusAsync';
-import { inspectHetznerComputeAsync } from '../application/inspectHetznerComputeAsync';
-import { planHetznerComputeAsync } from '../application/planHetznerComputeAsync';
-import { validateHetznerComputeAsync } from '../application/validateHetznerComputeAsync';
+import { infraAdapterDescriptor } from '../../../constants/infra.js';
+import type { HetznerAdapterOptions } from '../../../types/hetznerCompute.js';
+import { createFetchHetznerCloudApi } from '../adapters/outbound/createFetchHetznerCloudApi.js';
+import { createNodeHetznerHostKeyProbe } from '../adapters/outbound/createNodeHetznerHostKeyProbe.js';
+import { destroyHetznerComputeAsync } from '../application/destroyHetznerComputeAsync.js';
+import { ensureHetznerComputeAsync } from '../application/ensureHetznerComputeAsync.js';
+import { getHetznerComputeStatusAsync } from '../application/getHetznerComputeStatusAsync.js';
+import { inspectHetznerComputeAsync } from '../application/inspectHetznerComputeAsync.js';
+import { planHetznerComputeAsync } from '../application/planHetznerComputeAsync.js';
+import { validateHetznerComputeAsync } from '../application/validateHetznerComputeAsync.js';
 
 /***
  * Create the canonical Hetzner Cloud compute adapter.

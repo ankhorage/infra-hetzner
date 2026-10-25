@@ -4,11 +4,11 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { HetznerCloudApi } from '../../../types/hetznerCompute';
-import { getHetznerIdentity } from '../utils/hetznerOwnership';
-import { toStatuses } from './hetznerResults';
-import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync';
-import { invalidSelection } from './validateHetznerComputeAsync';
+import type { HetznerCloudApi } from '../../../types/hetznerCompute.js';
+import { getHetznerIdentity } from '../utils/hetznerOwnership.js';
+import { toStatuses } from './hetznerResults.js';
+import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync.js';
+import { invalidSelection } from './validateHetznerComputeAsync.js';
 
 /** Read exact owned Hetzner resource status from a fresh execution context. */
 export async function getHetznerComputeStatusAsync(

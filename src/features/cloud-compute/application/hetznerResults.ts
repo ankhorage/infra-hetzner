@@ -8,8 +8,8 @@ import type {
   HetznerCloudObservation,
   HetznerProjectIdentity,
   HetznerResourceObservation,
-} from '../../../types/hetznerCompute';
-import { createHetznerOwner } from '../utils/hetznerOwnership';
+} from '../../../types/hetznerCompute.js';
+import { createHetznerOwner } from '../utils/hetznerOwnership.js';
 
 export function toOwnedResources(
   identity: HetznerProjectIdentity,

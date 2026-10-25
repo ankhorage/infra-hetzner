@@ -5,9 +5,9 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { HetznerCloudApi, HetznerResourceId } from '../../../types/hetznerCompute';
-import { projectHetznerCompute } from './projectHetznerCompute';
-import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync';
+import type { HetznerCloudApi, HetznerResourceId } from '../../../types/hetznerCompute.js';
+import { projectHetznerCompute } from './projectHetznerCompute.js';
+import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync.js';
 
 /** Compare exact owned Cloud state with the deterministic single-node projection. */
 export async function planHetznerComputeAsync(

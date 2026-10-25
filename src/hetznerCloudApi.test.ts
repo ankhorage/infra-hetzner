@@ -135,7 +135,11 @@ function createContext() {
         runtime: { provider: 'k3s' as const },
       },
     },
-    credentials: { resolveAsync: () => Promise.reject(new Error('unused')) },
+    credentials: {
+      findAsync: () => Promise.reject(new Error('unused')),
+      resolveAsync: () => Promise.reject(new Error('unused')),
+      persistAsync: () => Promise.reject(new Error('unused')),
+    },
     secrets: { resolveAsync: () => Promise.reject(new Error('unused')) },
   };
 }

@@ -5,10 +5,10 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { HetznerCloudApi, HetznerHostKeyProbe } from '../../../types/hetznerCompute';
-import { createHetznerComputeSnapshotAsync } from './createHetznerComputeSnapshotAsync';
-import { projectHetznerCompute } from './projectHetznerCompute';
-import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync';
+import type { HetznerCloudApi, HetznerHostKeyProbe } from '../../../types/hetznerCompute.js';
+import { createHetznerComputeSnapshotAsync } from './createHetznerComputeSnapshotAsync.js';
+import { projectHetznerCompute } from './projectHetznerCompute.js';
+import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync.js';
 
 /*** Inspect exact owned Hetzner resources without creating, updating or deleting them. */
 export async function inspectHetznerComputeAsync(
