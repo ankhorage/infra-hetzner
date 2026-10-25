@@ -1,5 +1,11 @@
 # @ankhorage/hetzner
 
+## 0.3.3
+
+### Patch Changes
+
+- 0d7d551: fix(infra): use the canonical Contracts adapter descriptor catalog
+
 ## 0.3.2
 
 ### Patch Changes
