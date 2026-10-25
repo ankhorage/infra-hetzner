@@ -1,5 +1,11 @@
 # @ankhorage/hetzner
 
+## 0.3.1
+
+### Patch Changes
+
+- d41c160: Rename the published Hetzner infrastructure adapter package from `@ankhorage/hetzner`.
+
 ## 0.3.0
 
 ### Minor Changes

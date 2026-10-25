@@ -1,6 +1,6 @@
 {
-  "packageName": "@ankhorage/hetzner",
-  "packageId": "@ankhorage/hetzner",
+  "packageName": "@ankhorage/infra-hetzner",
+  "packageId": "@ankhorage/infra-hetzner",
   "description": "Hetzner Cloud compute adapter for provider-neutral Ankhorage infrastructure.",
   "collaborators": null,
   "donation": null,
@@ -14,7 +14,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.2.0",
+      "value": "v0.3.1",
       "color": "cb3837"
     },
     {
@@ -66,19 +66,25 @@
   "readmeCli": null,
   "readmeConfig": null,
   "config": null,
-  "entrypoints": ["src/index.ts"],
+  "entrypoints": [
+    "src/index.ts"
+  ],
   "modules": [
     {
       "path": "examples/basic-usage/index.ts",
       "isEntrypoint": false,
-      "dependencies": ["dist/index.d.ts"],
+      "dependencies": [
+        "dist/index.d.ts"
+      ],
       "exports": []
     },
     {
       "path": "src/constants/infra.ts",
       "isEntrypoint": false,
       "dependencies": [],
-      "exports": ["infraAdapterDescriptor"]
+      "exports": [
+        "infraAdapterDescriptor"
+      ]
     },
     {
       "path": "src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts",
@@ -88,13 +94,19 @@
         "src/features/cloud-compute/utils/hetznerOwnership.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["createFetchHetznerCloudApi"]
+      "exports": [
+        "createFetchHetznerCloudApi"
+      ]
     },
     {
       "path": "src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/types/hetznerCompute.ts"],
-      "exports": ["createNodeHetznerHostKeyProbe"]
+      "dependencies": [
+        "src/types/hetznerCompute.ts"
+      ],
+      "exports": [
+        "createNodeHetznerHostKeyProbe"
+      ]
     },
     {
       "path": "src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts",
@@ -124,7 +136,9 @@
         "src/features/cloud-compute/application/hetznerResults.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["createHetznerComputeSnapshotAsync"]
+      "exports": [
+        "createHetznerComputeSnapshotAsync"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/destroyHetznerComputeAsync.ts",
@@ -136,7 +150,9 @@
         "src/features/cloud-compute/utils/hetznerOwnership.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["destroyHetznerComputeAsync"]
+      "exports": [
+        "destroyHetznerComputeAsync"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/ensureHetznerComputeAsync.ts",
@@ -147,7 +163,9 @@
         "src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["ensureHetznerComputeAsync"]
+      "exports": [
+        "ensureHetznerComputeAsync"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/getHetznerComputeStatusAsync.ts",
@@ -159,7 +177,9 @@
         "src/features/cloud-compute/utils/hetznerOwnership.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["getHetznerComputeStatusAsync"]
+      "exports": [
+        "getHetznerComputeStatusAsync"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/hetznerResults.ts",
@@ -168,7 +188,11 @@
         "src/features/cloud-compute/utils/hetznerOwnership.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["toOwnedResources", "toPublicOutputs", "toStatuses"]
+      "exports": [
+        "toOwnedResources",
+        "toPublicOutputs",
+        "toStatuses"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/inspectHetznerComputeAsync.ts",
@@ -179,7 +203,9 @@
         "src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["inspectHetznerComputeAsync"]
+      "exports": [
+        "inspectHetznerComputeAsync"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/planHetznerComputeAsync.ts",
@@ -189,7 +215,9 @@
         "src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["planHetznerComputeAsync"]
+      "exports": [
+        "planHetznerComputeAsync"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/projectHetznerCompute.ts",
@@ -198,13 +226,17 @@
         "src/features/cloud-compute/utils/hetznerOwnership.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["projectHetznerCompute"]
+      "exports": [
+        "projectHetznerCompute"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts",
       "isEntrypoint": false,
       "dependencies": [],
-      "exports": ["resolveHetznerCredentialsAsync"]
+      "exports": [
+        "resolveHetznerCredentialsAsync"
+      ]
     },
     {
       "path": "src/features/cloud-compute/application/validateHetznerComputeAsync.ts",
@@ -213,7 +245,10 @@
         "src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["invalidSelection", "validateHetznerComputeAsync"]
+      "exports": [
+        "invalidSelection",
+        "validateHetznerComputeAsync"
+      ]
     },
     {
       "path": "src/features/cloud-compute/composition/createInfraAdapter.ts",
@@ -230,13 +265,22 @@
         "src/features/cloud-compute/application/validateHetznerComputeAsync.ts",
         "src/types/hetznerCompute.ts"
       ],
-      "exports": ["createInfraAdapter"]
+      "exports": [
+        "createInfraAdapter"
+      ]
     },
     {
       "path": "src/features/cloud-compute/utils/hetznerOwnership.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/types/hetznerCompute.ts"],
-      "exports": ["createHetznerOwner", "getHetznerIdentity", "getHetznerLabels", "HETZNER_LABELS"]
+      "dependencies": [
+        "src/types/hetznerCompute.ts"
+      ],
+      "exports": [
+        "createHetznerOwner",
+        "getHetznerIdentity",
+        "getHetznerLabels",
+        "HETZNER_LABELS"
+      ]
     },
     {
       "path": "src/hetznerCloudApi.test.ts",
@@ -250,7 +294,10 @@
     {
       "path": "src/hetznerCompute.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts", "src/types/hetznerCompute.ts"],
+      "dependencies": [
+        "src/index.ts",
+        "src/types/hetznerCompute.ts"
+      ],
       "exports": []
     },
     {
@@ -276,7 +323,9 @@
     {
       "path": "src/infraAdapter.test.ts",
       "isEntrypoint": false,
-      "dependencies": ["src/index.ts"],
+      "dependencies": [
+        "src/index.ts"
+      ],
       "exports": []
     },
     {
@@ -309,8 +358,13 @@
         "line": 34,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["HetznerCloudApi", "HetznerFetchApiOptions"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "HetznerCloudApi",
+        "HetznerFetchApiOptions"
+      ],
       "signatures": [
         {
           "label": "(options?: HetznerFetchApiOptions) => HetznerCloudApi",
@@ -341,8 +395,12 @@
         "line": 22,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["HetznerAdapterOptions"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "HetznerAdapterOptions"
+      ],
       "signatures": [
         {
           "label": "(options?: HetznerAdapterOptions) => InfraComputeAdapter<\"hetzner\">",
@@ -373,8 +431,12 @@
         "line": 9,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["HetznerHostKeyProbe"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "HetznerHostKeyProbe"
+      ],
       "signatures": [
         {
           "label": "() => HetznerHostKeyProbe",
@@ -398,8 +460,13 @@
         "line": 76,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["HetznerCloudApi", "HetznerHostKeyProbe"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "HetznerCloudApi",
+        "HetznerHostKeyProbe"
+      ],
       "signatures": [],
       "members": [
         {
@@ -431,7 +498,9 @@
         "line": 48,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
       "relatedSymbols": [
         "HetznerCloudObservation",
         "HetznerDesiredCompute",
@@ -483,8 +552,12 @@
         "line": 44,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["HetznerResourceObservation"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "HetznerResourceObservation"
+      ],
       "signatures": [],
       "members": [
         {
@@ -509,8 +582,12 @@
         "line": 21,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["HetznerProjectIdentity"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "HetznerProjectIdentity"
+      ],
       "signatures": [],
       "members": [
         {
@@ -605,7 +682,9 @@
         "line": 81,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
       "relatedSymbols": [],
       "signatures": [],
       "members": [
@@ -645,7 +724,9 @@
         "line": 72,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
       "relatedSymbols": [],
       "signatures": [],
       "members": [
@@ -671,7 +752,9 @@
         "line": 10,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
       "relatedSymbols": [],
       "signatures": [],
       "members": [
@@ -704,7 +787,9 @@
         "line": 8,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
       "relatedSymbols": [],
       "signatures": [],
       "members": [],
@@ -722,8 +807,12 @@
         "line": 35,
         "column": 1
       },
-      "exportPaths": ["src/index.ts"],
-      "relatedSymbols": ["HetznerResourceId"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "HetznerResourceId"
+      ],
       "signatures": [],
       "members": [
         {
@@ -783,7 +872,9 @@
         "line": 5,
         "column": 14
       },
-      "exportPaths": ["src/index.ts"],
+      "exportPaths": [
+        "src/index.ts"
+      ],
       "relatedSymbols": [],
       "signatures": [],
       "members": [],
