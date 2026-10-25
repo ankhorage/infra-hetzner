@@ -4,8 +4,8 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { HetznerCloudApi } from '../../../types/hetznerCompute';
-import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync';
+import type { HetznerCloudApi } from '../../../types/hetznerCompute.js';
+import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync.js';
 
 /** Validate selection and control-plane access without creating cloud resources. */
 export async function validateHetznerComputeAsync(

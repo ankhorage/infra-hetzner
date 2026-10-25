@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 
 import type { InfraResult } from '@ankhorage/contracts/infra';
 
-import type { HetznerHostKeyProbe } from '../../../../types/hetznerCompute';
+import type { HetznerHostKeyProbe } from '../../../../types/hetznerCompute.js';
 
 /** Create a shell-free SSH host-key probe for freshly provisioned public addresses. */
 export function createNodeHetznerHostKeyProbe(): HetznerHostKeyProbe {

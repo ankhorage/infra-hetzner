@@ -5,11 +5,11 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { HetznerCloudApi, HetznerResourceId } from '../../../types/hetznerCompute';
-import { getHetznerIdentity } from '../utils/hetznerOwnership';
-import { toOwnedResources, toPublicOutputs } from './hetznerResults';
-import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync';
-import { invalidSelection } from './validateHetznerComputeAsync';
+import type { HetznerCloudApi, HetznerResourceId } from '../../../types/hetznerCompute.js';
+import { getHetznerIdentity } from '../utils/hetznerOwnership.js';
+import { toOwnedResources, toPublicOutputs } from './hetznerResults.js';
+import { resolveHetznerCredentialsAsync } from './resolveHetznerCredentialsAsync.js';
+import { invalidSelection } from './validateHetznerComputeAsync.js';
 
 /** Delete exact owned compute resources only after project/environment confirmation. */
 export async function destroyHetznerComputeAsync(

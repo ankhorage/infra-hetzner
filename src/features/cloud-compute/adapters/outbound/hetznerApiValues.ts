@@ -5,8 +5,8 @@ import type {
   HetznerDesiredCompute,
   HetznerResourceId,
   HetznerResourceObservation,
-} from '../../../../types/hetznerCompute';
-import { HETZNER_LABELS } from '../../utils/hetznerOwnership';
+} from '../../../../types/hetznerCompute.js';
+import { HETZNER_LABELS } from '../../utils/hetznerOwnership.js';
 
 export type HetznerListKey = 'networks' | 'firewalls' | 'ssh_keys' | 'servers';
 

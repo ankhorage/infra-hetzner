@@ -2,8 +2,8 @@ import { createHash } from 'node:crypto';
 
 import type { InfraComputeSelection, InfraExecutionContext } from '@ankhorage/contracts/infra';
 
-import type { HetznerDesiredCompute, HetznerResourceId } from '../../../types/hetznerCompute';
-import { createHetznerOwner, getHetznerIdentity } from '../utils/hetznerOwnership';
+import type { HetznerDesiredCompute, HetznerResourceId } from '../../../types/hetznerCompute.js';
+import { createHetznerOwner, getHetznerIdentity } from '../utils/hetznerOwnership.js';
 
 /** Project one low-cost, single-node Hetzner compute target without runtime-specific behavior. */
 export function projectHetznerCompute(

@@ -8,8 +8,8 @@ import type {
   HetznerCloudObservation,
   HetznerDesiredCompute,
   HetznerHostKeyProbe,
-} from '../../../types/hetznerCompute';
-import { toOwnedResources, toPublicOutputs } from './hetznerResults';
+} from '../../../types/hetznerCompute.js';
+import { toOwnedResources, toPublicOutputs } from './hetznerResults.js';
 
 /*** Convert observed owned Cloud resources into a portable read-only compute snapshot. */
 export async function createHetznerComputeSnapshotAsync(

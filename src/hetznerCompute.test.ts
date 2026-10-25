@@ -133,6 +133,7 @@ function createContext(): InfraExecutionContext {
       },
     },
     credentials: {
+      findAsync: () => success(null),
       resolveAsync: ({ name }) => {
         const value: Readonly<Record<string, string>> =
           name === 'HCLOUD_TOKEN'
@@ -143,6 +144,7 @@ function createContext(): InfraExecutionContext {
               };
         return success(value);
       },
+      persistAsync: () => success(null),
     },
     secrets: {
       resolveAsync: () => success('secret-value'),

@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 
 import type { InfraExecutionContext, InfraOwnedResource } from '@ankhorage/contracts/infra';
 
-import type { HetznerProjectIdentity, HetznerResourceId } from '../../../types/hetznerCompute';
+import type { HetznerProjectIdentity, HetznerResourceId } from '../../../types/hetznerCompute.js';
 
 export const HETZNER_LABELS = {
   project: 'ankhorage.com/project',

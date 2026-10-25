@@ -8,8 +8,8 @@ import type {
   HetznerProjectIdentity,
   HetznerResourceId,
   HetznerResourceObservation,
-} from '../../../../types/hetznerCompute';
-import { getHetznerLabels } from '../../utils/hetznerOwnership';
+} from '../../../../types/hetznerCompute.js';
+import { getHetznerLabels } from '../../utils/hetznerOwnership.js';
 import {
   apiFailure,
   apiSuccess,
@@ -21,7 +21,7 @@ import {
   readActionStatus,
   readCreatedHetznerResource,
   readHetznerList,
-} from './hetznerApiValues';
+} from './hetznerApiValues.js';
 
 const HETZNER_RESOURCE_LISTS = [
   ['networks', 'network'],
