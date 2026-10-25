@@ -58,13 +58,13 @@ jobs:
           bun-version: '1.4.2'
 
       - name: Setup Node for npm publishing
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '24'
-          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
 
       - name: Update npm
-        run: npm install -g npm@latest
+        run: npm install -g npm@11.5.1
 
       - name: Install dependencies
         run: bun install
@@ -489,14 +489,7 @@ jobs:
 
       - name: Publish unpublished packages
         if: hashFiles('.changeset/config.json') != ''
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_BOOTSTRAP_TOKEN }}
         run: |
-          if [ -z "${NODE_AUTH_TOKEN:-}" ] || [ "$NODE_AUTH_TOKEN" = 'XXXXX-XXXXX-XXXXX-XXXXX' ]; then
-            echo "::error title=npm bootstrap authentication unavailable::NPM_BOOTSTRAP_TOKEN must be configured for this repository and must not be the setup-node placeholder."
-            exit 1
-          fi
-
           if ! node -e "const p=require('./package.json'); process.exit(p.ankh?.apm === undefined ? 1 : 0)"; then
             package_name="$(node -p "require('./package.json').name")"
             package_version="$(node -p "require('./package.json').version")"
@@ -548,13 +541,12 @@ jobs:
 
     steps:
       - name: Setup Node for npm verification
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '24'
-          registry-url: https://registry.npmjs.org
 
       - name: Update npm
-        run: npm install -g npm@latest
+        run: npm install -g npm@11.5.1
 
       - name: Verify published npm artifact from a fresh runner
         env:
