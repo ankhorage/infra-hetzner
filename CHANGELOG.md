@@ -1,5 +1,11 @@
 # @ankhorage/hetzner
 
+## 0.3.2
+
+### Patch Changes
+
+- 6c86a81: Publish releases through npm Trusted Publishing instead of a bootstrap token.
+
 ## 0.3.1
 
 ### Patch Changes
