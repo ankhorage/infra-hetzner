@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "kind": "adapter",
+  "title": "Ankhorage Hetzner Infrastructure",
+  "summary": "Provides a Hetzner Cloud compute adapter with REST-backed lifecycle operations and shell-free SSH host verification.",
+  "purpose": "Translate provider-neutral compute intent into Hetzner Cloud server lifecycle behavior without leaking provider credentials into portable state.",
+  "domain": "Hetzner Cloud compute infrastructure",
+  "responsibilities": [
+    "Provision and manage Hetzner Cloud compute instances through the authenticated Cloud API.",
+    "Verify host reachability through a shell-free, host-key-aware SSH probe.",
+    "Map Hetzner lifecycle state and failures into provider-neutral compute results."
+  ],
+  "boundaries": [
+    "Does not define provider-neutral infrastructure contracts.",
+    "Does not deploy application workloads after compute provisioning.",
+    "Does not persist provider API tokens or SSH credentials in portable infrastructure state."
+  ],
+  "audience": [
+    "Infrastructure hosts selecting Hetzner Cloud as a compute provider.",
+    "Operators provisioning provider-neutral compute targets on Hetzner."
+  ],
+  "useCases": [
+    "Provision a Hetzner Cloud server through the common compute adapter.",
+    "Inspect, suspend, resume, or delete an existing Hetzner server.",
+    "Verify SSH reachability without shell interpolation."
+  ],
+  "architecture": {
+    "role": "A cloud compute adapter translating Infra compute operations to Hetzner Cloud and SSH boundaries.",
+    "invariants": [
+      "Provider API and SSH credentials remain transient execution inputs.",
+      "SSH probing is shell-free and validates host identity.",
+      "Public results conform to the provider-neutral compute contract."
+    ]
+  },
+  "implements": [
+    {
+      "packageName": "@ankhorage/contracts",
+      "subpath": "./infra",
+      "interfaceId": "InfraComputeAdapter"
+    }
+  ],
+  "constraints": {
+    "platforms": ["Hetzner Cloud"],
+    "configuration": [
+      "Hetzner API authentication and SSH verification inputs are required for applicable operations."
+    ],
+    "security": [
+      "Provider and SSH credentials remain transient, and SSH probes avoid shell execution."
+    ],
+    "limitations": ["Workload deployment is owned by separate runtime adapters."]
+  }
+}
