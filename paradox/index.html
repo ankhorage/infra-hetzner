@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@ankhorage/infra-hetzner • Paradox</title>
+    <title>Ankhorage Hetzner Infrastructure • Paradox</title>
     <style>
       :root {
         color-scheme: light;
@@ -115,8 +115,9 @@
     <div class="layout">
       <aside class="sidebar">
         <p class="muted">Generated with Paradox</p>
-        <h1>@ankhorage/infra-hetzner</h1>
-        <p>Hetzner Cloud compute adapter for provider-neutral Ankhorage infrastructure.</p>
+        <h1>Ankhorage Hetzner Infrastructure</h1>
+        <p>Provides a Hetzner Cloud compute adapter with REST-backed lifecycle operations and shell-free SSH host verification.</p>
+        <p>Translate provider-neutral compute intent into Hetzner Cloud server lifecycle behavior without leaking provider credentials into portable state.</p>
         <input id="search" class="search" type="search" placeholder="Search current view" />
         <nav aria-label="Documentation sections">
           <ul class="nav-list">
@@ -231,7 +232,20 @@
         <li><code>src/index.ts</code></li>
       </ul>
     </section>
+
     
+    <section class="panel">
+    <h2>Policy findings</h2>
+    <article class="item" data-search="documentation.public-function.description warning Exported function createFetchHetznerCloudApi has no documentation description. src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts">
+          <h3>documentation.public-function.description</h3>
+          <p><strong>warning</strong> — Exported function createFetchHetznerCloudApi has no documentation description.</p>
+          <p class="muted"><code>src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts:34</code></p>
+        </article><article class="item" data-search="documentation.public-function.description warning Exported function createNodeHetznerHostKeyProbe has no documentation description. src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts">
+          <h3>documentation.public-function.description</h3>
+          <p><strong>warning</strong> — Exported function createNodeHetznerHostKeyProbe has no documentation description.</p>
+          <p class="muted"><code>src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts:9</code></p>
+        </article>
+  </section>
     <section class="panel">
       <h2>Modules</h2>
       <article class="item" data-search="examples/basic-usage/index.ts dist/index.d.ts">
@@ -351,9 +365,11 @@
       
             <section>
               <h3>src/constants/infra.ts</h3>
-              <article class="item" id="symbol-infraadapterdescriptor" data-search="infraAdapterDescriptor value src/constants/infra.ts ">
+              <article class="item" id="symbol-infraadapterdescriptor" data-search="infraAdapterDescriptor  value src/constants/infra.ts ">
     <h4>infraAdapterDescriptor</h4>
+    
     <p class="muted">value • <code>src/constants/infra.ts:5:14</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
@@ -363,9 +379,11 @@
             </section>
             <section>
               <h3>src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts</h3>
-              <article class="item" id="symbol-createfetchhetznercloudapi" data-search="createFetchHetznerCloudApi function src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts  HetznerCloudApi HetznerFetchApiOptions (options?: HetznerFetchApiOptions) =&gt; HetznerCloudApi">
+              <article class="item" id="symbol-createfetchhetznercloudapi" data-search="createFetchHetznerCloudApi  function src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts  HetznerCloudApi HetznerFetchApiOptions (options?: HetznerFetchApiOptions) =&gt; HetznerCloudApi">
     <h4>createFetchHetznerCloudApi</h4>
+    
     <p class="muted">function • <code>src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts:34:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">HetznerCloudApi</li><li class="chip">HetznerFetchApiOptions</li></ul></div>
@@ -390,9 +408,11 @@
             </section>
             <section>
               <h3>src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts</h3>
-              <article class="item" id="symbol-createnodehetznerhostkeyprobe" data-search="createNodeHetznerHostKeyProbe function src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts  HetznerHostKeyProbe () =&gt; HetznerHostKeyProbe">
+              <article class="item" id="symbol-createnodehetznerhostkeyprobe" data-search="createNodeHetznerHostKeyProbe  function src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts  HetznerHostKeyProbe () =&gt; HetznerHostKeyProbe">
     <h4>createNodeHetznerHostKeyProbe</h4>
+    
     <p class="muted">function • <code>src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts:9:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">HetznerHostKeyProbe</li></ul></div>
@@ -407,13 +427,15 @@
             </section>
             <section>
               <h3>src/features/cloud-compute/composition/createInfraAdapter.ts</h3>
-              <article class="item" id="symbol-createinfraadapter" data-search="createInfraAdapter function src/features/cloud-compute/composition/createInfraAdapter.ts Create the canonical Hetzner Cloud compute adapter.&#10;&#10;The default composition uses the authenticated Cloud REST API and a shell-free SSH host-key&#10;probe. Provider API and SSH credentials remain transient execution inputs. HetznerAdapterOptions (options?: HetznerAdapterOptions) =&gt; InfraComputeAdapter&lt;&quot;hetzner&quot;&gt;">
+              <article class="item" id="symbol-createinfraadapter" data-search="createInfraAdapter  function src/features/cloud-compute/composition/createInfraAdapter.ts Create the canonical Hetzner Cloud compute adapter.&#10;&#10;The default composition uses the authenticated Cloud REST API and a shell-free SSH host-key&#10;probe. Provider API and SSH credentials remain transient execution inputs. HetznerAdapterOptions (options?: HetznerAdapterOptions) =&gt; InfraComputeAdapter&lt;&quot;hetzner&quot;&gt;">
     <h4>createInfraAdapter</h4>
+    
     <p class="muted">function • <code>src/features/cloud-compute/composition/createInfraAdapter.ts:22:1</code></p>
     <p>Create the canonical Hetzner Cloud compute adapter.
 
 The default composition uses the authenticated Cloud REST API and a shell-free SSH host-key
 probe. Provider API and SSH credentials remain transient execution inputs.</p>
+    
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">HetznerAdapterOptions</li></ul></div>
     <div>
@@ -437,9 +459,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
             </section>
             <section>
               <h3>src/types/hetznerCompute.ts</h3>
-              <article class="item" id="symbol-hetzneradapteroptions" data-search="HetznerAdapterOptions type src/types/hetznerCompute.ts  HetznerCloudApi HetznerHostKeyProbe">
+              <article class="item" id="symbol-hetzneradapteroptions" data-search="HetznerAdapterOptions  type src/types/hetznerCompute.ts  HetznerCloudApi HetznerHostKeyProbe">
     <h4>HetznerAdapterOptions</h4>
+    
     <p class="muted">type • <code>src/types/hetznerCompute.ts:76:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">HetznerCloudApi</li><li class="chip">HetznerHostKeyProbe</li></ul></div>
@@ -462,9 +486,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
           </tr>
     </tbody>
   </table>
-  </article><article class="item" id="symbol-hetznercloudapi" data-search="HetznerCloudApi type src/types/hetznerCompute.ts  HetznerCloudObservation HetznerDesiredCompute HetznerProjectIdentity HetznerResourceId">
+  </article><article class="item" id="symbol-hetznercloudapi" data-search="HetznerCloudApi  type src/types/hetznerCompute.ts  HetznerCloudObservation HetznerDesiredCompute HetznerProjectIdentity HetznerResourceId">
     <h4>HetznerCloudApi</h4>
+    
     <p class="muted">type • <code>src/types/hetznerCompute.ts:48:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">HetznerCloudObservation</li><li class="chip">HetznerDesiredCompute</li><li class="chip">HetznerProjectIdentity</li><li class="chip">HetznerResourceId</li></ul></div>
@@ -499,9 +525,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
           </tr>
     </tbody>
   </table>
-  </article><article class="item" id="symbol-hetznercloudobservation" data-search="HetznerCloudObservation type src/types/hetznerCompute.ts  HetznerResourceObservation">
+  </article><article class="item" id="symbol-hetznercloudobservation" data-search="HetznerCloudObservation  type src/types/hetznerCompute.ts  HetznerResourceObservation">
     <h4>HetznerCloudObservation</h4>
+    
     <p class="muted">type • <code>src/types/hetznerCompute.ts:44:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">HetznerResourceObservation</li></ul></div>
@@ -518,9 +546,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
           </tr>
     </tbody>
   </table>
-  </article><article class="item" id="symbol-hetznerdesiredcompute" data-search="HetznerDesiredCompute type src/types/hetznerCompute.ts  HetznerProjectIdentity">
+  </article><article class="item" id="symbol-hetznerdesiredcompute" data-search="HetznerDesiredCompute  type src/types/hetznerCompute.ts  HetznerProjectIdentity">
     <h4>HetznerDesiredCompute</h4>
+    
     <p class="muted">type • <code>src/types/hetznerCompute.ts:21:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">HetznerProjectIdentity</li></ul></div>
@@ -597,9 +627,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
           </tr>
     </tbody>
   </table>
-  </article><article class="item" id="symbol-hetznerfetchapioptions" data-search="HetznerFetchApiOptions type src/types/hetznerCompute.ts ">
+  </article><article class="item" id="symbol-hetznerfetchapioptions" data-search="HetznerFetchApiOptions  type src/types/hetznerCompute.ts ">
     <h4>HetznerFetchApiOptions</h4>
+    
     <p class="muted">type • <code>src/types/hetznerCompute.ts:81:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
@@ -628,9 +660,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
           </tr>
     </tbody>
   </table>
-  </article><article class="item" id="symbol-hetznerhostkeyprobe" data-search="HetznerHostKeyProbe type src/types/hetznerCompute.ts ">
+  </article><article class="item" id="symbol-hetznerhostkeyprobe" data-search="HetznerHostKeyProbe  type src/types/hetznerCompute.ts ">
     <h4>HetznerHostKeyProbe</h4>
+    
     <p class="muted">type • <code>src/types/hetznerCompute.ts:72:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
@@ -647,9 +681,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
           </tr>
     </tbody>
   </table>
-  </article><article class="item" id="symbol-hetznerprojectidentity" data-search="HetznerProjectIdentity type src/types/hetznerCompute.ts ">
+  </article><article class="item" id="symbol-hetznerprojectidentity" data-search="HetznerProjectIdentity  type src/types/hetznerCompute.ts ">
     <h4>HetznerProjectIdentity</h4>
+    
     <p class="muted">type • <code>src/types/hetznerCompute.ts:10:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
@@ -672,17 +708,21 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
           </tr>
     </tbody>
   </table>
-  </article><article class="item" id="symbol-hetznerresourceid" data-search="HetznerResourceId unknown src/types/hetznerCompute.ts ">
+  </article><article class="item" id="symbol-hetznerresourceid" data-search="HetznerResourceId  unknown src/types/hetznerCompute.ts ">
     <h4>HetznerResourceId</h4>
+    
     <p class="muted">unknown • <code>src/types/hetznerCompute.ts:8:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
     
     
-  </article><article class="item" id="symbol-hetznerresourceobservation" data-search="HetznerResourceObservation type src/types/hetznerCompute.ts  HetznerResourceId">
+  </article><article class="item" id="symbol-hetznerresourceobservation" data-search="HetznerResourceObservation  type src/types/hetznerCompute.ts  HetznerResourceId">
     <h4>HetznerResourceObservation</h4>
+    
     <p class="muted">type • <code>src/types/hetznerCompute.ts:35:1</code></p>
+    
     
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">HetznerResourceId</li></ul></div>
@@ -742,7 +782,7 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>Architecture overview</h3>
     <p class="muted"><code>diagrams/architecture-overview.mmd</code></p>
     <div class="mermaid">graph TD
-  package__ankhorage_infra_hetzner[&quot;@ankhorage/infra-hetzner&quot;]
+  package__ankhorage_infra_hetzner[&quot;Ankhorage Hetzner Infrastructure&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
   package__ankhorage_infra_hetzner --&gt; entrypoint_src_index_ts
   module_examples_basic_usage_index_ts[&quot;examples/basic-usage/index.ts&quot;]
@@ -844,7 +884,7 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <details>
       <summary>View Mermaid source</summary>
       <pre>graph TD
-  package__ankhorage_infra_hetzner[&quot;@ankhorage/infra-hetzner&quot;]
+  package__ankhorage_infra_hetzner[&quot;Ankhorage Hetzner Infrastructure&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
   package__ankhorage_infra_hetzner --&gt; entrypoint_src_index_ts
   module_examples_basic_usage_index_ts[&quot;examples/basic-usage/index.ts&quot;]
@@ -1260,6 +1300,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     </details>
   </article>
     </section>
+          <section class="panel" data-search="donation sponsor support">
+            <h2>Donation</h2>
+            <p>If this project is useful to you, you can support its continued development.</p>
+            <p><a href="https://github.com/sponsors/ankhorage">Support @ankhorage</a></p>
+          </section>
         </section>
         <section id="view-src-features-cloud-compute-adapters-outbound-createfetchhetznercloudapi-ts" class="view" data-view="src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts" hidden>
     <section class="panel">
@@ -1268,7 +1313,7 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>createFetchHetznerCloudApi</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts:34:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-adapters-outbound-createnodehetznerhostkeyprobe-ts" class="view" data-view="src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts" hidden>
     <section class="panel">
@@ -1277,23 +1322,23 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>createNodeHetznerHostKeyProbe</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts:9:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="fingerprintAsync src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts ">
+</article><article class="item" data-search="fingerprintAsync src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts ">
     <h3>fingerprintAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts:13:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="scanAsync src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts ">
+</article><article class="item" data-search="scanAsync src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts ">
     <h3>scanAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts:31:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="parseFingerprint src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts ">
+</article><article class="item" data-search="parseFingerprint src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts ">
     <h3>parseFingerprint</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts:53:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="failure src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts ">
+</article><article class="item" data-search="failure src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts ">
     <h3>failure</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts:67:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-adapters-outbound-hetznerapivalues-ts" class="view" data-view="src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts" hidden>
     <section class="panel">
@@ -1302,63 +1347,63 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>createHetznerResourceBody</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:13:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="parseHetznerResource src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="parseHetznerResource src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>parseHetznerResource</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:63:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="hasHetznerDrift src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="hasHetznerDrift src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>hasHetznerDrift</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:85:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="readHetznerList src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="readHetznerList src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>readHetznerList</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:100:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="readCreatedHetznerResource src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="readCreatedHetznerResource src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>readCreatedHetznerResource</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:116:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="readActionId src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="readActionId src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>readActionId</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:132:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="readActionStatus src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="readActionStatus src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>readActionStatus</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:138:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="hasNamedHetznerResource src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="hasNamedHetznerResource src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>hasNamedHetznerResource</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:144:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="apiSuccess src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="apiSuccess src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>apiSuccess</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:158:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="apiFailure src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="apiFailure src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>apiFailure</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:162:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="readServerIpv4 src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="readServerIpv4 src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>readServerIpv4</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:169:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="readServerArchitecture src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="readServerArchitecture src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>readServerArchitecture</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:175:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="mapState src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="mapState src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>mapState</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:184:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="getNetworkZone src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="getNetworkZone src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>getNetworkZone</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:191:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="isRecord src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
+</article><article class="item" data-search="isRecord src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts ">
     <h3>isRecord</h3>
     <p class="muted"><code>src/features/cloud-compute/adapters/outbound/hetznerApiValues.ts:198:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-createhetznercomputesnapshotasync-ts" class="view" data-view="src/features/cloud-compute/application/createHetznerComputeSnapshotAsync.ts" hidden>
     <section class="panel">
@@ -1367,7 +1412,7 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>createHetznerComputeSnapshotAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/application/createHetznerComputeSnapshotAsync.ts:15:1</code></p>
     <p>Convert observed owned Cloud resources into a portable read-only compute snapshot.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-destroyhetznercomputeasync-ts" class="view" data-view="src/features/cloud-compute/application/destroyHetznerComputeAsync.ts" hidden>
     <section class="panel">
@@ -1376,15 +1421,15 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>destroyHetznerComputeAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/application/destroyHetznerComputeAsync.ts:15:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="isConfirmed src/features/cloud-compute/application/destroyHetznerComputeAsync.ts ">
+</article><article class="item" data-search="isConfirmed src/features/cloud-compute/application/destroyHetznerComputeAsync.ts ">
     <h3>isConfirmed</h3>
     <p class="muted"><code>src/features/cloud-compute/application/destroyHetznerComputeAsync.ts:44:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="unconfirmed src/features/cloud-compute/application/destroyHetznerComputeAsync.ts ">
+</article><article class="item" data-search="unconfirmed src/features/cloud-compute/application/destroyHetznerComputeAsync.ts ">
     <h3>unconfirmed</h3>
     <p class="muted"><code>src/features/cloud-compute/application/destroyHetznerComputeAsync.ts:53:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-ensurehetznercomputeasync-ts" class="view" data-view="src/features/cloud-compute/application/ensureHetznerComputeAsync.ts" hidden>
     <section class="panel">
@@ -1393,11 +1438,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>ensureHetznerComputeAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/application/ensureHetznerComputeAsync.ts:14:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="unavailableServer src/features/cloud-compute/application/ensureHetznerComputeAsync.ts ">
+</article><article class="item" data-search="unavailableServer src/features/cloud-compute/application/ensureHetznerComputeAsync.ts ">
     <h3>unavailableServer</h3>
     <p class="muted"><code>src/features/cloud-compute/application/ensureHetznerComputeAsync.ts:35:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-gethetznercomputestatusasync-ts" class="view" data-view="src/features/cloud-compute/application/getHetznerComputeStatusAsync.ts" hidden>
     <section class="panel">
@@ -1406,7 +1451,7 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>getHetznerComputeStatusAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/application/getHetznerComputeStatusAsync.ts:14:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-hetznerresults-ts" class="view" data-view="src/features/cloud-compute/application/hetznerResults.ts" hidden>
     <section class="panel">
@@ -1415,19 +1460,19 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>toOwnedResources</h3>
     <p class="muted"><code>src/features/cloud-compute/application/hetznerResults.ts:14:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="toStatuses src/features/cloud-compute/application/hetznerResults.ts ">
+</article><article class="item" data-search="toStatuses src/features/cloud-compute/application/hetznerResults.ts ">
     <h3>toStatuses</h3>
     <p class="muted"><code>src/features/cloud-compute/application/hetznerResults.ts:24:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="toPublicOutputs src/features/cloud-compute/application/hetznerResults.ts ">
+</article><article class="item" data-search="toPublicOutputs src/features/cloud-compute/application/hetznerResults.ts ">
     <h3>toPublicOutputs</h3>
     <p class="muted"><code>src/features/cloud-compute/application/hetznerResults.ts:34:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="hasPublicAddress src/features/cloud-compute/application/hetznerResults.ts ">
+</article><article class="item" data-search="hasPublicAddress src/features/cloud-compute/application/hetznerResults.ts ">
     <h3>hasPublicAddress</h3>
     <p class="muted"><code>src/features/cloud-compute/application/hetznerResults.ts:52:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-inspecthetznercomputeasync-ts" class="view" data-view="src/features/cloud-compute/application/inspectHetznerComputeAsync.ts" hidden>
     <section class="panel">
@@ -1436,7 +1481,7 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>inspectHetznerComputeAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/application/inspectHetznerComputeAsync.ts:14:1</code></p>
     <p>Inspect exact owned Hetzner resources without creating, updating or deleting them.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-planhetznercomputeasync-ts" class="view" data-view="src/features/cloud-compute/application/planHetznerComputeAsync.ts" hidden>
     <section class="panel">
@@ -1445,7 +1490,7 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>planHetznerComputeAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/application/planHetznerComputeAsync.ts:13:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-projecthetznercompute-ts" class="view" data-view="src/features/cloud-compute/application/projectHetznerCompute.ts" hidden>
     <section class="panel">
@@ -1454,11 +1499,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>projectHetznerCompute</h3>
     <p class="muted"><code>src/features/cloud-compute/application/projectHetznerCompute.ts:9:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="resource src/features/cloud-compute/application/projectHetznerCompute.ts ">
+</article><article class="item" data-search="resource src/features/cloud-compute/application/projectHetznerCompute.ts ">
     <h3>resource</h3>
     <p class="muted"><code>src/features/cloud-compute/application/projectHetznerCompute.ts:28:9</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-resolvehetznercredentialsasync-ts" class="view" data-view="src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts" hidden>
     <section class="panel">
@@ -1467,11 +1512,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>resolveHetznerCredentialsAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts:18:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="isNonEmpty src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts ">
+</article><article class="item" data-search="isNonEmpty src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts ">
     <h3>isNonEmpty</h3>
     <p class="muted"><code>src/features/cloud-compute/application/resolveHetznerCredentialsAsync.ts:53:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-application-validatehetznercomputeasync-ts" class="view" data-view="src/features/cloud-compute/application/validateHetznerComputeAsync.ts" hidden>
     <section class="panel">
@@ -1480,11 +1525,11 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>validateHetznerComputeAsync</h3>
     <p class="muted"><code>src/features/cloud-compute/application/validateHetznerComputeAsync.ts:11:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="invalidSelection src/features/cloud-compute/application/validateHetznerComputeAsync.ts ">
+</article><article class="item" data-search="invalidSelection src/features/cloud-compute/application/validateHetznerComputeAsync.ts ">
     <h3>invalidSelection</h3>
     <p class="muted"><code>src/features/cloud-compute/application/validateHetznerComputeAsync.ts:22:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-composition-createinfraadapter-ts" class="view" data-view="src/features/cloud-compute/composition/createInfraAdapter.ts" hidden>
     <section class="panel">
@@ -1496,7 +1541,7 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
 
 The default composition uses the authenticated Cloud REST API and a shell-free SSH host-key
 probe. Provider API and SSH credentials remain transient execution inputs.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-features-cloud-compute-utils-hetznerownership-ts" class="view" data-view="src/features/cloud-compute/utils/hetznerOwnership.ts" hidden>
     <section class="panel">
@@ -1505,15 +1550,15 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>createHetznerOwner</h3>
     <p class="muted"><code>src/features/cloud-compute/utils/hetznerOwnership.ts:15:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="getHetznerLabels src/features/cloud-compute/utils/hetznerOwnership.ts ">
+</article><article class="item" data-search="getHetznerLabels src/features/cloud-compute/utils/hetznerOwnership.ts ">
     <h3>getHetznerLabels</h3>
     <p class="muted"><code>src/features/cloud-compute/utils/hetznerOwnership.ts:35:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="getHetznerIdentity src/features/cloud-compute/utils/hetznerOwnership.ts ">
+</article><article class="item" data-search="getHetznerIdentity src/features/cloud-compute/utils/hetznerOwnership.ts ">
     <h3>getHetznerIdentity</h3>
     <p class="muted"><code>src/features/cloud-compute/utils/hetznerOwnership.ts:54:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-hetznercloudapi-test-ts" class="view" data-view="src/hetznerCloudApi.test.ts" hidden>
     <section class="panel">
@@ -1522,23 +1567,23 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>validationResponse</h3>
     <p class="muted"><code>src/hetznerCloudApi.test.ts:102:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="listResponse src/hetznerCloudApi.test.ts ">
+</article><article class="item" data-search="listResponse src/hetznerCloudApi.test.ts ">
     <h3>listResponse</h3>
     <p class="muted"><code>src/hetznerCloudApi.test.ts:109:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="createResponse src/hetznerCloudApi.test.ts ">
+</article><article class="item" data-search="createResponse src/hetznerCloudApi.test.ts ">
     <h3>createResponse</h3>
     <p class="muted"><code>src/hetznerCloudApi.test.ts:116:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="parseBody src/hetznerCloudApi.test.ts ">
+</article><article class="item" data-search="parseBody src/hetznerCloudApi.test.ts ">
     <h3>parseBody</h3>
     <p class="muted"><code>src/hetznerCloudApi.test.ts:123:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="createContext src/hetznerCloudApi.test.ts ">
+</article><article class="item" data-search="createContext src/hetznerCloudApi.test.ts ">
     <h3>createContext</h3>
     <p class="muted"><code>src/hetznerCloudApi.test.ts:128:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section><section id="view-src-hetznercompute-test-ts" class="view" data-view="src/hetznerCompute.test.ts" hidden>
     <section class="panel">
@@ -1547,19 +1592,19 @@ probe. Provider API and SSH credentials remain transient execution inputs.</p>
     <h3>createContext</h3>
     <p class="muted"><code>src/hetznerCompute.test.ts:120:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="getSelection src/hetznerCompute.test.ts ">
+</article><article class="item" data-search="getSelection src/hetznerCompute.test.ts ">
     <h3>getSelection</h3>
     <p class="muted"><code>src/hetznerCompute.test.ts:155:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="destroyRequest src/hetznerCompute.test.ts ">
+</article><article class="item" data-search="destroyRequest src/hetznerCompute.test.ts ">
     <h3>destroyRequest</h3>
     <p class="muted"><code>src/hetznerCompute.test.ts:161:1</code></p>
     <p class="empty">No description available.</p>
-  </article><article class="item" data-search="success src/hetznerCompute.test.ts ">
+</article><article class="item" data-search="success src/hetznerCompute.test.ts ">
     <h3>success</h3>
     <p class="muted"><code>src/hetznerCompute.test.ts:170:1</code></p>
     <p class="empty">No description available.</p>
-  </article>
+</article>
     </section>
   </section>
       </main>

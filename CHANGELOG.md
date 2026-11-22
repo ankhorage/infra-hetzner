@@ -1,5 +1,11 @@
 # @ankhorage/hetzner
 
+## 0.3.4
+
+### Patch Changes
+
+- 539c859: Update the published infrastructure contract and development toolchain dependencies.
+
 ## 0.3.3
 
 ### Patch Changes

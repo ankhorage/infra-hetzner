@@ -1,9 +1,11 @@
 [
   {
     "name": "createFetchHetznerCloudApi",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "function",
     "modulePath": "src/features/cloud-compute/adapters/outbound/createFetchHetznerCloudApi.ts",
     "sourceLocation": {
@@ -38,9 +40,11 @@
   },
   {
     "name": "createInfraAdapter",
+    "title": null,
     "description": "Create the canonical Hetzner Cloud compute adapter.\n\nThe default composition uses the authenticated Cloud REST API and a shell-free SSH host-key\nprobe. Provider API and SSH credentials remain transient execution inputs.",
     "isReadme": true,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "function",
     "modulePath": "src/features/cloud-compute/composition/createInfraAdapter.ts",
     "sourceLocation": {
@@ -74,9 +78,11 @@
   },
   {
     "name": "createNodeHetznerHostKeyProbe",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "function",
     "modulePath": "src/features/cloud-compute/adapters/outbound/createNodeHetznerHostKeyProbe.ts",
     "sourceLocation": {
@@ -103,9 +109,11 @@
   },
   {
     "name": "HetznerAdapterOptions",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "type",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -141,9 +149,11 @@
   },
   {
     "name": "HetznerCloudApi",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "type",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -195,9 +205,11 @@
   },
   {
     "name": "HetznerCloudObservation",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "type",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -225,9 +237,11 @@
   },
   {
     "name": "HetznerDesiredCompute",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "type",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -325,9 +339,11 @@
   },
   {
     "name": "HetznerFetchApiOptions",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "type",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -367,9 +383,11 @@
   },
   {
     "name": "HetznerHostKeyProbe",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "type",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -395,9 +413,11 @@
   },
   {
     "name": "HetznerProjectIdentity",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "type",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -430,9 +450,11 @@
   },
   {
     "name": "HetznerResourceId",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "unknown",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -450,9 +472,11 @@
   },
   {
     "name": "HetznerResourceObservation",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "type",
     "modulePath": "src/types/hetznerCompute.ts",
     "sourceLocation": {
@@ -515,9 +539,11 @@
   },
   {
     "name": "infraAdapterDescriptor",
+    "title": null,
     "description": null,
     "isReadme": false,
-    "examples": [],
+    "see": [],
+    "security": [],
     "kind": "value",
     "modulePath": "src/constants/infra.ts",
     "sourceLocation": {
